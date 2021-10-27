@@ -75,5 +75,10 @@ function fetchImages(hits) {
   newsApiService.featchImages().then(hits => {
     appendImagesMarkup(hits);
     loadButton.enable();
+    if (hits.length === 0) {
+      loadButton.hide();
+      noMatchesFound();
+    }
   })
+  .catch(err => alert(err))
 }
