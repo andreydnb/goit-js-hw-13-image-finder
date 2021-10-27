@@ -6,7 +6,7 @@ export default class NewsApiService {
     this.searchQuery = '';
     this.page = 1;
   }
-  featchArticles() {  
+  featchImages() {  
     return fetch(`${BASE_URL}?image_type=photo&orientation=horizontal&q=${this.searchQuery}&page=${this.page}&per_page=12&key=${KEY}`)
       .then(response => response.json())
       .then(data => {

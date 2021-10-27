@@ -3,6 +3,5 @@ export const refs = {
     input: document.querySelector('.input'),
     inputMessage: document.querySelector('.input-message'),
     galleryList: document.querySelector('.gallery'),
-    loadButton: document.querySelector(".button"),
     body: document.querySelector("body")
 }
